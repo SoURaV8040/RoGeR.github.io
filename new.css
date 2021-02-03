@@ -22,11 +22,11 @@ span {
 
 #bigScore {
     position: fixed;
-    top: 40%;
+    top: 36%;
     left: 20%;
     display: flex;
-    width: 50%;
-    height: 18%;
+    width: 60%;
+    height: 25%;
     color: #000;
     border-radius: 5px;
     background-color: white;
