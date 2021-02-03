@@ -140,7 +140,7 @@ function spwnEnemies() {
 
 function animate() {
     animateID = requestAnimationFrame(animate);
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.3)'
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.2)'
     ctx.fillRect(0, 0, x * 2, y * 2);
     player.draw();
     particles.forEach((particle, particleIndex) => {
