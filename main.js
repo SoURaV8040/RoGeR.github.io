@@ -191,14 +191,14 @@ function animate() {
                 // big enemy distroy to smol...
                 if (enemy.radius - 8 > 10) {
                     enemy.radius -= 10;
-                    Score += 10;
+                    Score += 100;
                     scorE.innerHTML = Score;
                     setTimeout(() => {
                         projectiles.splice(projectilesIndex, 1);
                     }, 0);
                 } else {
                     setTimeout(() => {
-                        Score += 15;
+                        Score += 150;
                         radiusIncrige += 0.1;
                         scorE.innerHTML = Score;
                         enemies.splice(enemiesIndex, 1);
@@ -217,7 +217,7 @@ addEventListener('click', (event) => {
         x: Math.sin(angle) * 5,
         y: Math.cos(angle) * 5
     };
-    projectiles.push(new Projectile(x, y, 5, 'white', velocity));
+    projectiles.push(new Projectile(x, y, 5, 'red', velocity));
 });
 
 // start button click then how to work ......
